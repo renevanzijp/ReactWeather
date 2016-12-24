@@ -26644,7 +26644,7 @@
 	    return React.createElement(
 	        "h3",
 	        null,
-	        "Examples arrow function stateless functional component"
+	        "Examples"
 	    );
 	};
 
