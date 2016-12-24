@@ -10,7 +10,7 @@ var  React = require("react");
 
 var About = (props) => {
     return(
-        <h3>About arrow function stateles functional component</h3>
+        <h3>About</h3>
     )
 };
 

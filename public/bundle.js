@@ -26618,7 +26618,7 @@
 	    return React.createElement(
 	        "h3",
 	        null,
-	        "About arrow function stateles functional component"
+	        "About"
 	    );
 	};
 
