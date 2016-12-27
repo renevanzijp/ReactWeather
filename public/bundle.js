@@ -27321,6 +27321,16 @@
 	                    "Open Weather Map"
 	                ),
 	                " - a service for weather information."
+	            ),
+	            React.createElement(
+	                "li",
+	                null,
+	                React.createElement(
+	                    "a",
+	                    { href: "https://github.com/renevanzijp/ReactWeather" },
+	                    "Github"
+	                ),
+	                " - a  Git repository hosting servic."
 	            )
 	        )
 	    );
