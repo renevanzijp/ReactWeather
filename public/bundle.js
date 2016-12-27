@@ -27293,6 +27293,7 @@
 	            "The Complete React Web App Developer Course"
 	        ),
 	        React.createElement("br", null),
+	        React.createElement("br", null),
 	        React.createElement(
 	            "p",
 	            null,

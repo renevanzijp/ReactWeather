@@ -8,6 +8,7 @@ var About = (props) => {
             <p> from the course:</p>
             <a href="https://www.udemy.com/the-complete-react-web-app-developer-course/learn/v4/overview">The Complete React Web App Developer Course</a>
             <br/>
+            <br/>
             <p>Some tools used</p>
             <ol>
                 <li>
