@@ -25738,7 +25738,7 @@
 	                    null,
 	                    React.createElement(
 	                        "button",
-	                        { className: "button hollow" },
+	                        { className: "button expanded hollow" },
 	                        "Get Weather"
 	                    )
 	                )
