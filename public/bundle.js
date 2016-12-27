@@ -27273,14 +27273,6 @@
 
 	var React = __webpack_require__(8);
 
-	// var About = React.createClass({
-	//    render: function () {
-	//        return(
-	//             <h3>About component</h3>
-	//        )
-	//    }
-	// });
-
 	var About = function About(props) {
 	    return React.createElement(
 	        "div",
@@ -27289,6 +27281,16 @@
 	            "h1",
 	            { className: "text-center" },
 	            "About"
+	        ),
+	        React.createElement(
+	            "p",
+	            null,
+	            " from the course:"
+	        ),
+	        React.createElement(
+	            "a",
+	            { href: "https://www.udemy.com/the-complete-react-web-app-developer-course/learn/v4/overview" },
+	            "The Complete React Web App Developer Course"
 	        ),
 	        React.createElement(
 	            "p",

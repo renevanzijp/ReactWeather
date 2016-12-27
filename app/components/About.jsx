@@ -1,17 +1,12 @@
 var  React = require("react");
 
-// var About = React.createClass({
-//    render: function () {
-//        return(
-//             <h3>About component</h3>
-//        )
-//    }
-// });
 
 var About = (props) => {
     return(
         <div>
             <h1 className="text-center">About</h1>
+            <p> from the course:</p>
+            <a href="https://www.udemy.com/the-complete-react-web-app-developer-course/learn/v4/overview">The Complete React Web App Developer Course</a>
             <p>Some tools used</p>
             <ol>
                 <li>
