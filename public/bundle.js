@@ -27292,6 +27292,7 @@
 	            { href: "https://www.udemy.com/the-complete-react-web-app-developer-course/learn/v4/overview" },
 	            "The Complete React Web App Developer Course"
 	        ),
+	        React.createElement("br", null),
 	        React.createElement(
 	            "p",
 	            null,
