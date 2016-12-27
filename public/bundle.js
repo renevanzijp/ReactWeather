@@ -25646,7 +25646,7 @@
 	            if (isLoading) {
 	                return React.createElement(
 	                    "h3",
-	                    null,
+	                    { className: "text-center" },
 	                    "Fetching weather..."
 	                );
 	            } else if (temp && city) {
@@ -25657,6 +25657,11 @@
 	        return React.createElement(
 	            "div",
 	            null,
+	            React.createElement(
+	                "h1",
+	                { className: "text-center" },
+	                "Get weather"
+	            ),
 	            React.createElement(WeatherForm, { handleUpdates: this.handleUpdates }),
 	            renderMessage()
 	        );
@@ -25673,29 +25678,19 @@
 
 	var React = __webpack_require__(8);
 
-	// var WeatherMessage = React.createClass({
-	//     render: function () {
-	//         var temp = this.props.temp;
-	//         var city = this.props.city;
-	//         return (
-	//             <div>
-	//                 {temp} in {city}
-	//             </div>
-	//         );
-	//     }
-	// });
-
 	var WeatherMessage = function WeatherMessage(_ref) {
 	    var temp = _ref.temp,
 	        city = _ref.city;
 
 	    //    var {temp, city} = props;
 	    return React.createElement(
-	        "div",
-	        null,
+	        "h3",
+	        { className: "text-center" },
+	        "It is ",
 	        temp,
 	        " in ",
-	        city
+	        city,
+	        "."
 	    );
 	};
 

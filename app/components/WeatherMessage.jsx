@@ -1,23 +1,11 @@
 var React = require("react");
 
-// var WeatherMessage = React.createClass({
-//     render: function () {
-//         var temp = this.props.temp;
-//         var city = this.props.city;
-//         return (
-//             <div>
-//                 {temp} in {city}
-//             </div>
-//         );
-//     }
-// });
+
 
 var WeatherMessage = ({temp, city}) => {
 //    var {temp, city} = props;
     return (
-        <div>
-            {temp} in {city}
-        </div>
+        <h3 className="text-center">It is {temp} in {city}.</h3>
     );
 };
 
