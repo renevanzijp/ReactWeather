@@ -27288,9 +27288,42 @@
 
 	var About = function About(props) {
 	    return React.createElement(
-	        "h3",
+	        "div",
 	        null,
-	        "About"
+	        React.createElement(
+	            "h1",
+	            { className: "text-center" },
+	            "About"
+	        ),
+	        React.createElement(
+	            "p",
+	            null,
+	            "Some tools used"
+	        ),
+	        React.createElement(
+	            "ol",
+	            null,
+	            React.createElement(
+	                "li",
+	                null,
+	                React.createElement(
+	                    "a",
+	                    { href: "https://facebook.github.io/react" },
+	                    "React"
+	                ),
+	                " - a Javascript framework."
+	            ),
+	            React.createElement(
+	                "li",
+	                null,
+	                React.createElement(
+	                    "a",
+	                    { href: "http://openweathermap.org" },
+	                    "Open Weather Map"
+	                ),
+	                " - a service for weather information."
+	            )
+	        )
 	    );
 	};
 
