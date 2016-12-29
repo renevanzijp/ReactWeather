@@ -25525,8 +25525,16 @@
 
 	    onSearch: function onSearch(e) {
 	        e.preventDefault();
-	        alert("not yet implemented");
+	        var city = this.refs.search.value;
+
+	        var encodedCity = encodeURIComponent(city);
+
+	        if (city && city.length > 0) {
+	            this.refs.search.value = "";
+	            window.location.hash = "#/?location=" + encodedCity;
+	        }
 	    },
+
 	    render: function render() {
 	        return React.createElement(
 	            "div",
@@ -25583,7 +25591,7 @@
 	                        React.createElement(
 	                            "li",
 	                            null,
-	                            React.createElement("input", { type: "search", placeholder: "search weather by city" })
+	                            React.createElement("input", { type: "search", placeholder: "search weather by city", ref: "search" })
 	                        ),
 	                        React.createElement(
 	                            "li",
@@ -25634,7 +25642,9 @@
 
 	            that.setState({
 	                isLoading: false,
-	                errorMessage: e.message
+	                errorMessage: e.message,
+	                city: undefined,
+	                temp: undefined
 	            });
 	        });
 	    },
@@ -25643,7 +25653,26 @@
 	            isLoading: false
 	        };
 	    },
+	    componentDidMount: function componentDidMount() {
+	        var city = this.props.location.query.location;
+	        var updates = {};
 
+	        if (city && city.length > 0) {
+	            updates.city = city;
+	            this.handleUpdates(updates);
+	            window.location.hash = '#/';
+	        }
+	    },
+	    componentWillReceiveProps: function componentWillReceiveProps(newProps) {
+	        var city = newProps.location.query.location;
+	        var updates = {};
+
+	        if (city && city.length > 0) {
+	            updates.city = city;
+	            this.handleUpdates(updates);
+	            window.location.hash = '#/';
+	        }
+	    },
 	    render: function render() {
 	        var _state = this.state,
 	            isLoading = _state.isLoading,
